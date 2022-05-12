@@ -1,8 +1,13 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import { App, addiere } from './App';
 
+/*
 test('renders learn react link', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const element = screen.getByText("Learn React");
+  expect(element).toBeInTheDocument();
+});*/
+
+test('function add', () => {
+  expect(addiere(2,6)).toBe(8)
 });
